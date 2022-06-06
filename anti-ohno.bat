@@ -45,7 +45,16 @@ echo.
 
 
 echo -----
-echo Step 4: Delete 'Reboot', 'Reboot_AC', and 'Reboot_Battery' registry keys
+echo Step 4: Disable 'Schedule Wake To Work' task
+echo -----
+%MyFiles%\PsExec.exe -i -s cmd.exe /c schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Wake To Work" /Disable
+
+echo.
+echo.
+echo.
+
+echo -----
+echo Step 5: Delete 'Reboot', 'Reboot_AC', and 'Reboot_Battery' registry keys
 echo -----
 echo This part will need to be done manually. Please open regedit as adminstrator and navigate to:
 echo.
@@ -60,9 +69,6 @@ echo.
 echo After deleting the above keys, please press any key to continue.
 pause
 
-echo.
-echo.
-echo.
 
 echo Process complete. Press any key to exit.
 pause >nul
