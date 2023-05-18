@@ -48,6 +48,9 @@ echo -----
 echo Step 4: Disable 'Schedule Wake To Work' task
 echo -----
 PsExec.exe -i -s cmd.exe /c schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Wake To Work" /Disable
+PsExec.exe -i -s cmd.exe /c schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Work" /Disable
+PsExec.exe -i -s cmd.exe /c schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Maintenance Work" /Disable
+PsExec.exe -i -s cmd.exe /c schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Maintenance Install" /Disable
 
 echo.
 echo.
