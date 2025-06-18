@@ -1,7 +1,7 @@
 # UpdateOrch-AntiAutoReboot
 If you are running Windows 7 or an early build of Windows 10, please use either `anti-ohno.bat` with a copy of `PsExec.exe` in the same location, or use `Anti-OhNo.exe` which contains its own `PsExec.exe` copy within.
 
-If you are running Windows 10 of 21H2 or newer build or any version of Windows 11, please use `anti-ohno (Win10-11).bat`. The updated version is configured to automatically download a copy of `PsExec.exe` from this respository into the Users' Local Temp directory for use and will remove the executable from Temp when completed.
+If you are running Windows 10 of 21H2 or newer build or any version of Windows 11, please use `anti-ohno (Win11-24H2).bat`. The updated version is configured to automatically download a copy of `PsExec.exe` from this respository into the Users' Local Temp directory for use and will remove the executable from Temp when completed.
 
 These batch scripts forcefully break UpdateOrchestrator's ability to automatically restart Windows.
 
